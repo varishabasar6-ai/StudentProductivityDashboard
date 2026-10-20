@@ -1,5 +1,5 @@
 streamlit
 supabase
-streamlit-cookies-manager
+streamlit-cookies-manager-v2
 pandas
 altair
