@@ -9,6 +9,11 @@ import pandas as pd
 import altair as alt
 from datetime import date, datetime, timedelta, timezone
 from supabase import create_client
+
+# Intercept and fix the broken legacy cookie manager method
+if not hasattr(st, "cache"):
+    st.cache = st.cache_data
+
 from streamlit_cookies_manager import EncryptedCookieManager
 
 
